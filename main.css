@@ -1,0 +1,440 @@
+@font-face {
+    font-family: 'Font';
+    src: url('./Fonts/sodo-sans-6.woff');
+    }
+    
+    @media (prefers-color-scheme: dark) {
+    .forum-main {
+        padding-top: 5px;
+    }
+    }
+    
+    
+    
+    h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0; /* Restore vertical spacing */
+    }
+    
+    p {
+    margin: 1rem 0; /* Add consistent spacing between paragraphs */
+    }
+    
+    ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem; /* Add indentation for lists */
+    }
+    
+   a {
+    text-decoration: none;
+    margin: 0; /* Links usually don’t need margins */
+    }
+    
+    .news {
+        width: 80%;
+        margin: 40px auto 0 auto; /* top 40px, horizontal auto for centering */
+        text-align: justify;
+    }
+    
+    
+    
+    
+    body {
+    font-family: 'Font';
+    font-style: bold;
+    background-image: url(./Content/Images/background.png);
+    background-position: top;
+    color: rgba(0, 0, 0, 0.1);
+    /*background-position: center;-->*/
+    position: relative;
+    z-index: 1;
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    
+    
+    .black-box {
+        background-color: rgba(0, 0, 0, 0.333);
+        top: 20px;
+        left: 20px; 
+        bottom: 0px;
+        right: 20px;
+        z-index: 1;
+        position: absolute;
+    
+    }
+    
+    .socionics-life-forum a {
+        color: rgb(64, 6, 6);
+        font-size: 48px;
+        -webkit-text-stroke: 0.05px rgb(240, 220, 85);;
+        text-decoration: rgb(240, 220, 85);
+        border-color: rgb(240, 220, 85);
+    }
+    
+    .socionics-life-forum a:hover {
+        color: rgb(125, 29, 29);
+    }
+    
+    .socionics-life-info a {
+        color: rgb(240, 85, 183);
+        font-size: 42px;
+    }
+    
+    .socionics-life-info a:hover {
+        color: rgb(240, 85, 183);
+        font-size: 42px;
+    }
+    
+    .forum-button:hover {
+        color: rgb(196, 46, 176);
+    }
+    
+    
+    .info-button:hover {
+        color: rgb(196, 46, 176);
+    }
+    
+    .forum-description {
+        color: white;
+        font-style: italic;
+        
+    }
+    
+    .subpage-header {
+        color: white;
+        font-style: bold;
+        text-align: center;
+        font-size: 29px;
+    }
+    
+    
+    
+    /*     .black-box {
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 20px 20px 20px 20px;
+        width: 1328px;
+        height: 1124px;
+        z-index: 2;
+        position: absolute;
+    
+    } */
+    
+    .content {
+        z-index: 3;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .forum-main {
+        top: 15px;
+        margin-bottom: 20px;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        color: white;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: center;
+        margin: 0 30px;
+    }
+    
+    
+    
+    .navbar a {
+        color: white;
+        padding: 0px;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 15px;
+    }
+    
+    .navbar a:hover {
+        color: rgb(240, 85, 183);
+    }
+    
+    .forum-description {
+        text-align: center;
+    }
+    
+    .separator {
+        padding-top: 200px;
+    }
+    
+    .go-to-forum {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .forum-button {
+        padding: 8px 15px;
+        color: rgb(255, 225, 31);
+        text-decoration: none;
+        border: 5px solid rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        font-size: 30px;
+        font-style: bold;
+    }
+    
+    .typing-services-button {
+        padding: 8px 0px;
+        margin: 0px 45px 0px 45px;
+        color: rgb(255, 225, 31);
+        text-decoration: none;
+        border: 5px solid rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        font-size: 30px;
+        font-style: bold;
+    }
+    
+    .info-button {
+        padding: 8px 15px;
+        color: rgb(255, 225, 31);
+        text-decoration: none;
+        border: 5px solid rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        font-size: 30px;
+        font-style: bold;
+    }
+    
+    .news {
+        font-size: 15px;
+        color: white;
+        z-index: 3;
+        position: relative;
+    }
+    
+    /*.page-header {
+        width: 100%;
+        height: 75px;
+        background-color: rgba(112, 20, 148, 0.444);
+        position: fixed;
+        top: 0;
+        left: 0;
+        position: relative;
+        z-index: 0;
+    
+    }*/
+    
+    
+    /* FORUM SUBPAGES: */
+    
+    .thread {
+        display: flex;
+        align-items: left;
+        flex-wrap: wrap;
+        gap: 15px;
+        color:rgb(251, 249, 247);
+        margin-bottom: 30px;
+    }
+    
+    .thread p {
+        margin: 0;
+    }
+    
+    .thread-meta-2 {
+        flex-basis: 100%;
+        text-align: left;
+    }
+    
+    .thread-title a {
+        color: rgb(28, 149, 224);
+    }
+    
+    .thread-actual {
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+        color: white;
+    }
+    
+    .thread-header {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%
+    }
+    
+    .forum-threads {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%
+    }
+    
+    
+    
+    .thread-text {
+        text-align: left;
+        margin: 25px 7% 25px 7%;
+    }
+    
+    .responses {
+        text-align: left;
+        color: white;
+        margin: 25px 7% 25px 7%;
+    }
+    
+    .thread-responses {
+        text-align: left;
+        color: white;
+        margin: 25px 7% 25px 7%;
+    }
+    
+    .response-separator {
+        margin-top: 50px;
+    }
+    
+    
+    textarea, input[type="text"] {
+        width: 100%; /* Full width of its container */
+        height: 80px; /* Height for textarea; adjust for inputs */
+        margin-bottom: 10px; /* Space between elements */
+        border: 1px solid #ccc; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 13px; /* Font size */
+        font-family: Arial, sans-serif; /* Font family */
+        box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+        outline: none; /* Remove default focus outline */
+        background-color: black; /* Background color */
+        resize: none;
+        color: white;
+        margin: 25px 7% 25px 7%;
+    }
+    
+    .user-profile {
+        color: white;
+    }
+    
+    #response-form {
+        margin: 25px 0% 25px 0%;
+    }
+    
+    
+    
+    
+    #login-container {
+        position: absolute;
+        z-index: 10;
+        top: 45px;
+        left: 45px;
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #534a4a;
+        border: 4px;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #register-button {
+        position: absolute;
+        z-index: 10;
+        top: 45px;
+        right: 45px;
+    }
+    
+    #login-button {
+        position: absolute;
+        z-index: 10;
+        top: 45px;
+        left: 45px;
+    }
+    
+    
+    .button {
+        display: inline-block;
+        padding: 5px 10px;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #534a4a;
+        border: 4px;
+        border-radius: 4px;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #024287;
+    }
+    
+    #registration-form {
+        color: white;
+        margin: 0px 26% 0px 26%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    
+    }
+    
+    #registration-form {
+        text-align: left;
+    }
+    
+    #registration-container {
+        display: block;
+        text-align: left;
+    }
+    
+    #next {
+        width: 74px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .reg-form {
+        width: 300px;
+    }
+    
+    label {
+        display: block;
+        text-align: left;       /* Align the label to the left-most part of the input box */
+        margin-bottom: 5px;     /* Add spacing between label and input */
+        font-size: 16px;        /* Optional: Improve readability */
+      }
+    
+    
+    
+    
+    .typing-services-content {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 140px;
+        margin-right: 140px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .typing-option-two h1,
+    .typing-option-one h1,
+    .typing-option-three h1{
+        flex: 1;
+        text-align: center !important;
+    }
+    
+    .typing-option-two,
+    .typing-option-one,
+    .typing-option-three{
+        flex: 1;
+        text-align: center !important;
+    }
+    
+    
+    .typing-services-text {
+        text-align: justify;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
